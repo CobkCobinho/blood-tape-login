@@ -87,6 +87,6 @@ RAG combina recuperação de informações com geração; LLM é um modelo de li
 
 ## Verificação
 
-A sintaxe do JavaScript foi conferida com `node --check`. Os fluxos de validação, troca de modo, personalização e armazenamento foram exercitados com um teste isolado de eventos e estado, sem um navegador real. A prévia visual no navegador não pôde ser verificada neste ambiente por restrição de acesso à conexão local.
+A sintaxe do JavaScript foi conferida com `node --check`. Os fluxos de validação, troca de modo, personalização e armazenamento foram exercitados com um teste isolado de eventos e estado, sem um navegador real. Após a publicação no GitHub Pages, a página também foi revisada em um navegador real: campos vazios, e-mail inválido, senha curta, envio demonstrativo, exibição de senha, lembrança de e-mail após recarregar, cadastro e controles de personalização. O layout foi conferido em tela de computador e larguras de celular de 390 px e 320 px. Essa revisão encontrou um título largo em telas estreitas, corrigido com tamanho de fonte responsivo.
 
 Para revisar no navegador: tente enviar campos vazios, e-mail inválido e senha curta; conclua um envio válido; alterne entre cadastro/login durante a espera; teste mostrar senha, lembrar e-mail, cores, texto, efeitos e navegação por Tab. Confira também a página no celular.
