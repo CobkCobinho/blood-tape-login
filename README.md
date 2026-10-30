@@ -79,16 +79,6 @@ Todos têm estilos definidos no CSS e aparecem na página, como exercício solic
 
 Os três últimos são uma escolha didática para demonstrar todas as tags. Em um produto real, controles irmãos normalmente usam títulos no mesmo nível. O tamanho visual é definido no CSS e não depende do tamanho padrão das tags.
 
-## Publicação no GitHub Pages
-
-O projeto está publicado em **https://cobkcobinho.github.io/blood-tape-login/**.
-
-A configuração usada é **Deploy from a branch**, com a branch **main** e a pasta **/(root)**. O arquivo `.nojekyll` mantém a publicação como arquivos estáticos. Não é necessário configurar um domínio próprio.
-
-Para atualizar o site, envie as alterações para `main` e acompanhe a execução **pages build and deployment** na [aba Actions](https://github.com/CobkCobinho/blood-tape-login/actions). A publicação não é instantânea; confirme a conclusão antes de conferir o site.
-
-Se uma aba aberta anteriormente ainda mostrar 404, recarregue-a depois de a publicação concluir. Se o erro continuar, confira o resultado da publicação na aba Actions. A referência completa é a [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
 ## Para evoluir para autenticação real
 
 Conecte a interface a um backend ou provedor de identidade. Validação no navegador ajuda a experiência de uso; as mesmas regras precisam ser verificadas no servidor. O serviço deverá cuidar de hash seguro de senhas, sessões, proteção contra abuso e recuperação por tokens de uso único. Nunca transforme `localStorage` em banco de senhas.
