@@ -101,7 +101,3 @@ No navegador, foram conferidos:
 A revisão identificou e corrigiu o tamanho do título e a rolagem horizontal em telas estreitas. Também foi atualizada a versão do CSS no HTML para carregar os estilos corrigidos.
 
 Os testes de largura foram feitos no navegador de computador, sem uso de um celular físico. Essa revisão não cobre todos os navegadores ou uma autenticação de produção.
-
-## Licença
-
-Distribuído sob a [licença MIT](LICENSE).
