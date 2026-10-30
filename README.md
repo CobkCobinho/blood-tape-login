@@ -97,7 +97,3 @@ No navegador, foram conferidos:
 - Cor e texto do botão e controle do efeito VHS.
 - Navegação por Tab entre os campos e aviso de recuperação de senha.
 - Aparência no computador e em larguras de tela de 390 px e 320 px.
-
-A revisão identificou e corrigiu o tamanho do título e a rolagem horizontal em telas estreitas. Também foi atualizada a versão do CSS no HTML para carregar os estilos corrigidos.
-
-Os testes de largura foram feitos no navegador de computador, sem uso de um celular físico. Essa revisão não cobre todos os navegadores ou uma autenticação de produção.
