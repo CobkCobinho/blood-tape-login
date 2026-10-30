@@ -5,9 +5,8 @@ Um formulário de login com alma analógica: vermelho sangue, preto, vidro fosco
 ## Acesse o projeto
 
 - **Site funcionando:** [cobkcobinho.github.io/blood-tape-login](https://cobkcobinho.github.io/blood-tape-login/)
-- **Código-fonte:** [github.com/CobkCobinho/blood-tape-login](https://github.com/CobkCobinho/blood-tape-login)
 
-O endereço `github.io` abre a demonstração publicada pelo GitHub Pages. O endereço `github.com` abre o repositório com os arquivos, a documentação e o histórico de alterações.
+O endereço `github.io` abre a demonstração publicada pelo GitHub Pages.
 
 > Projeto educacional de frontend. Login e cadastro são simulações: nenhuma conta é criada e nenhuma sessão é autenticada.
 
