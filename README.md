@@ -2,7 +2,16 @@
 
 Um formulário de login com alma analógica: vermelho sangue, preto, vidro fosco e estética VHS dos anos 2000. Feito com **HTML, CSS e JavaScript puro**, sem instalação de pacotes ou etapa de compilação.
 
-## Como abrir
+## Acesse o projeto
+
+- **Site funcionando:** [cobkcobinho.github.io/blood-tape-login](https://cobkcobinho.github.io/blood-tape-login/)
+- **Código-fonte:** [github.com/CobkCobinho/blood-tape-login](https://github.com/CobkCobinho/blood-tape-login)
+
+O endereço `github.io` abre a demonstração publicada pelo GitHub Pages. O endereço `github.com` abre o repositório com os arquivos, a documentação e o histórico de alterações.
+
+> Projeto educacional de frontend. Login e cadastro são simulações: nenhuma conta é criada e nenhuma sessão é autenticada.
+
+## Como abrir localmente
 
 Baixe os arquivos e abra `index.html` no navegador. Mantenha `styles.css`, `script.js` e `icon.svg` na mesma pasta.
 
@@ -53,7 +62,10 @@ blood-tape/
 ├── styles.css    # Paleta, fita VHS, layout e efeitos responsivos
 ├── script.js     # Validação, estados e personalização
 ├── icon.svg      # Símbolo original: fita VHS com detalhe sangue
-└── README.md
+├── .gitignore   # Arquivos locais que não devem entrar no Git
+├── .nojekyll    # Publicação estática no GitHub Pages
+├── LICENSE      # Licença MIT
+└── README.md    # Documentação do projeto
 ```
 
 ## Títulos H1 a H6
@@ -67,26 +79,39 @@ Todos têm estilos definidos no CSS e aparecem na página, como exercício solic
 
 Os três últimos são uma escolha didática para demonstrar todas as tags. Em um produto real, controles irmãos normalmente usam títulos no mesmo nível. O tamanho visual é definido no CSS e não depende do tamanho padrão das tags.
 
-## Publicar no GitHub Pages
+## Publicação no GitHub Pages
 
-1. Crie um repositório e envie os arquivos do projeto para a raiz.
-2. No GitHub, abra **Settings → Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**.
-4. Escolha a sua branch principal e a pasta **/(root)**; salve.
-5. Aguarde a publicação e abra o endereço fornecido pelo GitHub.
+O projeto está publicado em **https://cobkcobinho.github.io/blood-tape-login/**.
 
-Referência: [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+A configuração usada é **Deploy from a branch**, com a branch **main** e a pasta **/(root)**. O arquivo `.nojekyll` mantém a publicação como arquivos estáticos. Não é necessário configurar um domínio próprio.
+
+Para atualizar o site, envie as alterações para `main` e acompanhe a execução **pages build and deployment** na [aba Actions](https://github.com/CobkCobinho/blood-tape-login/actions). A publicação não é instantânea; confirme a conclusão antes de conferir o site.
+
+Se uma aba aberta anteriormente ainda mostrar 404, recarregue-a depois de a publicação concluir. Se o erro continuar, confira o resultado da publicação na aba Actions. A referência completa é a [documentação oficial do GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Para evoluir para autenticação real
 
 Conecte a interface a um backend ou provedor de identidade. Validação no navegador ajuda a experiência de uso; as mesmas regras precisam ser verificadas no servidor. O serviço deverá cuidar de hash seguro de senhas, sessões, proteção contra abuso e recuperação por tokens de uso único. Nunca transforme `localStorage` em banco de senhas.
 
-## Sobre IA, RAG e LLMs
-
-RAG combina recuperação de informações com geração; LLM é um modelo de linguagem. Nenhum dos dois é necessário para este formulário e não há integração com IA, chamadas a modelos, chaves de API ou dependências desse tipo no projeto.
-
 ## Verificação
 
-A sintaxe do JavaScript foi conferida com `node --check`. Os fluxos de validação, troca de modo, personalização e armazenamento foram exercitados com um teste isolado de eventos e estado, sem um navegador real. Após a publicação no GitHub Pages, a página também foi revisada em um navegador real: campos vazios, e-mail inválido, senha curta, envio demonstrativo, exibição de senha, lembrança de e-mail após recarregar, cadastro e controles de personalização. O layout foi conferido em tela de computador e larguras de celular de 390 px e 320 px. Essa revisão encontrou um título largo em telas estreitas, corrigido com tamanho de fonte responsivo.
+A revisão incluiu checagem de sintaxe do JavaScript com `node --check`, um teste isolado de eventos e estado e testes na demonstração publicada em um navegador real.
 
-Para revisar no navegador: tente enviar campos vazios, e-mail inválido e senha curta; conclua um envio válido; alterne entre cadastro/login durante a espera; teste mostrar senha, lembrar e-mail, cores, texto, efeitos e navegação por Tab. Confira também a página no celular.
+No navegador, foram conferidos:
+
+- Mensagens para campos vazios, e-mail inválido e senha curta.
+- Envio válido de login e cadastro, com o aviso de simulação.
+- Mostrar e ocultar senha.
+- E-mail mantido após recarregar com a opção de lembrança selecionada.
+- Alternância entre login e cadastro.
+- Cor e texto do botão e controle do efeito VHS.
+- Navegação por Tab entre os campos e aviso de recuperação de senha.
+- Aparência no computador e em larguras de tela de 390 px e 320 px.
+
+A revisão identificou e corrigiu o tamanho do título e a rolagem horizontal em telas estreitas. Também foi atualizada a versão do CSS no HTML para carregar os estilos corrigidos.
+
+Os testes de largura foram feitos no navegador de computador, sem uso de um celular físico. Essa revisão não cobre todos os navegadores ou uma autenticação de produção.
+
+## Licença
+
+Distribuído sob a [licença MIT](LICENSE).
