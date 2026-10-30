@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0709">
+  <meta name="description" content="BLOOD//TAPE — um experimento de login inspirado na estética VHS, feito com HTML, CSS e JavaScript.">
+  <title>BLOOD//TAPE — Entre na frequência</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#email">Pular para o formulário</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Blood Tape, início"><img class="brand-icon" src="icon.svg" alt="" width="29" height="29"> BLOOD<span class="brand-slash">//</span>TAPE<span class="version">®</span></a>
+      <span class="edition">ANALOG SOUL. DIGITAL ACCESS.</span>
+      <span class="live-tag"><i aria-hidden="true"></i> SINAL ATIVO</span>
+    </header>
+
+    <main class="stage">
+      <section class="experience" aria-labelledby="page-title">
+        <div class="story">
+          <div class="tape-meta"><span>VOL. 001 / ACESSO</span><span>EST. 2000</span></div>
+          <h1 id="page-title">O passado<br>tem uma nova<br><span>frequência.</span></h1>
+          <p class="story-description">Rebobine o mundo lá fora.<br>O seu próximo capítulo começa aqui.</p>
+
+          <div class="cassette" role="img" aria-label="Ilustração de uma fita VHS preta com etiqueta vermelha Blood Tape, volume 001">
+            <div class="cassette-top"><span>HI-FI STEREO</span><span>VHS</span></div>
+            <div class="tape-window"><div class="reel"></div><div class="tape-bridge"></div><div class="reel"></div></div>
+            <div class="tape-label"><span>BLOOD//TAPE</span><small>SIDE A — THE BEGINNING</small><b>001</b></div>
+            <div class="cassette-bottom"><span>◉</span><span>DO NOT ERASE</span><span>◉</span></div>
+          </div>
+          <div class="playback" aria-hidden="true"><span>▶ PLAY</span><span class="timecode">00:00:01</span><span>SP</span></div>
+        </div>
+
+        <section class="login-panel" aria-labelledby="form-title">
+          <div class="panel-top"><span class="eyebrow"><span aria-hidden="true">●</span> ÁREA DE ACESSO</span><span class="panel-index">[ 01—02 ]</span></div>
+          <div class="form-heading"><span class="small-play" aria-hidden="true">▷</span><h2 id="form-title">Entre na fita.</h2><p id="form-description">Sua frequência. Seu espaço. Dê o play.</p></div>
+          <form id="access-form" novalidate aria-describedby="form-description demo-note">
+            <div class="field register-only" hidden>
+              <label for="name">COMO PODEMOS TE CHAMAR?</label>
+              <div class="input-shell"><span aria-hidden="true">◉</span><input id="name" name="name" type="text" autocomplete="nickname" maxlength="60" placeholder="Seu nome" aria-describedby="name-error" disabled></div>
+              <p class="field-error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">SEU E-MAIL</label>
+              <div class="input-shell"><span aria-hidden="true">@</span><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="voce@exemplo.com" required aria-describedby="email-error"></div>
+              <p class="field-error" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="password">SUA SENHA</label>
+              <div class="input-shell"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><input id="password" name="password" type="password" autocomplete="current-password" maxlength="128" placeholder="Sua senha fica só com você" required aria-describedby="password-hint password-error"><button class="show-password" type="button" aria-label="Mostrar senha" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+              <p class="field-hint" id="password-hint">Use de 8 a 128 caracteres.</p>
+              <p class="field-error" id="password-error"></p>
+            </div>
+            <div class="form-options"><label class="check-label"><input id="remember" type="checkbox"> Lembrar meu e-mail</label><button class="text-button" id="forgot-password" type="button">Esqueceu a senha?</button></div>
+            <button class="submit-button" type="submit"><span id="submit-label">DAR O PLAY</span><span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+          <div class="register-strip"><span id="switch-description">Ainda não faz parte da fita?</span> <a href="#cadastro" id="mode-switch">Crie sua conta <span aria-hidden="true">↗</span></a></div>
+          <p class="demo-note" id="demo-note"><span aria-hidden="true">◇</span> DEMO INTERATIVA · NENHUMA CONTA REAL É CRIADA</p>
+        </section>
+      </section>
+
+      <section class="studio" aria-labelledby="studio-title">
+        <div class="studio-caption"><h3 id="studio-title">Ajuste a sua frequência.</h3><p>O controle criativo é seu.</p></div>
+        <div class="studio-control"><h4 id="color-title">01 / COR DO BOTÃO</h4><div class="swatches" role="group" aria-labelledby="color-title"><button type="button" class="swatch" data-color="red" aria-label="Vermelho sangue" aria-pressed="true"></button><button type="button" class="swatch" data-color="wine" aria-label="Vinho" aria-pressed="false"></button><button type="button" class="swatch" data-color="bone" aria-label="Branco osso" aria-pressed="false"></button></div></div>
+        <div class="studio-control text-control"><h5><label for="button-text">02 / TEXTO DO BOTÃO</label></h5><input id="button-text" type="text" maxlength="24" placeholder="DAR O PLAY" autocomplete="off"><span class="sr-only" id="custom-status" role="status"></span></div>
+        <div class="studio-control"><h6 id="effects-title">03 / EFEITO VHS</h6><button class="effect-toggle" id="effects-toggle" type="button" aria-pressed="true" aria-labelledby="effects-title effects-label"><span class="toggle-track" aria-hidden="true"></span><span id="effects-label">Ligado</span></button></div>
+      </section>
+    </main>
+    <footer class="footer"><span>© <span id="year">2026</span> BLOOD//TAPE</span><span>FEITO PARA QUEM NÃO NASCEU NO MODO PADRÃO.</span><span class="footer-format">REC <i aria-hidden="true"></i> 4:3 / DIGITAL</span></footer>
+  </div>
+  <noscript><p class="noscript">Ative o JavaScript para usar a demonstração e personalizar os efeitos.</p></noscript>
+</body>
+</html>
